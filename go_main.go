@@ -46,7 +46,7 @@ func PrintFilesName(path string) []string {
 		if fi.IsDir() {
 			return nil
 		}
-		if strings.Contains(fi.Name(), "struct.go") {
+		if strings.Contains(fi.Name(), "_struct.go") {
 			listStr.PushBack(fi.Name())
 		}
 		return nil
